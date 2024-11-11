@@ -11,7 +11,8 @@ type Tools struct {
 
 // RandomString generates a random string of length n using the characters from randomStringSource.
 // it creates a rune then converts it to a string and returns the string
-// TODO: provide a usage example
+// USAGE EXAMPLE:
+// s := tools.RandomString(10)
 func (t *Tools) RandomString(n int) string {
 	s, r := make([]rune, n), []rune(randomStringSource)
 	for i := range s {
